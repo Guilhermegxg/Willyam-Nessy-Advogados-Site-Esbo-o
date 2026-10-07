@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Willyam Nessy Advogados: advogado em Porto Alegre e Rio Grande/RS. Direito de Família, Imobiliário, Previdenciário, Civil e do Trabalho.">
+<title>Willyam Nessy Advogados | Advogado em Porto Alegre e Rio Grande/RS</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#060606}
+html{scroll-behavior:smooth}
+.wn{font-family:'Jost',sans-serif;color:var(--tx);background:var(--bg);line-height:1.7;font-size:17px;overflow-x:hidden}
+.wn *{box-sizing:border-box}
+.wn h1,.wn h2,.wn h3{font-family:'Cormorant Garamond',serif;font-weight:500;margin:0;line-height:1.1;color:var(--tx)}
+.wn a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative}
+.sec{padding:128px 0;border-top:1px solid var(--ln)}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:500;margin:0 0 22px}
+.h2{font-size:clamp(34px,4.4vw,56px)}
+.mu{color:var(--mu)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 32px;background:var(--accent);color:#060606 !important;font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;transition:transform .25s,filter .25s}
+.btn:hover{filter:brightness(1.12);transform:translateY(-2px)}
+.btn2{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 32px;border:1px solid rgba(255,255,255,.25);font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase;transition:border-color .25s,color .25s}
+.btn2:hover{border-color:var(--accent);color:var(--accent)}
+.nav a.l{color:var(--mu);font-size:14px;letter-spacing:.04em;transition:color .2s}
+.nav a.l:hover{color:var(--accent)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:72px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start;margin-top:64px}
+.card{background:var(--sf);border:1px solid var(--ln);padding:40px 34px;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--accent);transform:translateY(-4px)}
+.card h3{font-size:30px;margin:14px 0 12px}
+.card p{margin:0 0 20px;font-size:16px}
+.num{font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:.2em;color:var(--accent);margin-top:22px}
+.ic{width:34px;height:34px;fill:none;stroke:var(--accent);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.pil{border-top:1px solid var(--accent);padding-top:28px}
+.pil h3{font-size:26px;margin:18px 0 8px}
+.pil p{margin:0;font-size:16px}
+summary{list-style:none;cursor:pointer;color:var(--accent);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;display:inline-flex;align-items:center;gap:10px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:20px}
+details[open] summary::after{content:"\2212"}
+details[open] .dt{animation:fadeUp .5s ease both}
+.dt{padding-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{border:1px solid var(--ln);padding:5px 12px;font-size:13px;color:var(--mu)}
+.logo{position:absolute;right:5%;top:70px;width:min(460px,40vw);mix-blend-mode:lighten;pointer-events:none;animation:floaty 8s ease-in-out infinite}
+.halo{position:absolute;right:9%;top:150px;width:340px;height:340px;border-radius:50%;background:var(--accent);filter:blur(140px);opacity:.14;pointer-events:none;animation:glow 7s ease-in-out infinite}
+.hero{position:relative;overflow:hidden;padding:150px 0 130px}
+.hero .eyebrow,.hero h1,.hero p.mu,.hero .cta{animation:fadeUp .9s ease both}
+.hero h1{animation-delay:.25s}
+.hero p.mu{animation-delay:.45s}
+.hero .cta{animation-delay:.65s}
+.line{height:1px;background:var(--accent);width:0;animation:grow 1.6s .9s ease forwards;margin:36px 0 0}
+.mq{overflow:hidden;border-top:1px solid var(--ln);padding:20px 0;background:#0A0A0A}
+.mq div{display:flex;width:max-content;animation:marq 40s linear infinite}
+.mq.rev div{animation-direction:reverse;animation-duration:46s}
+.mq:hover div{animation-play-state:paused}
+.mq span{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--mu);white-space:nowrap}
+.mq span::after{content:"";display:inline-block;width:6px;height:6px;background:var(--accent);margin:0 44px;vertical-align:middle;transform:rotate(45deg)}
+.mono{aspect-ratio:1;max-width:400px;width:100%;border:1px solid var(--ln);display:flex;align-items:center;justify-content:center;position:relative;background:var(--sf)}
+.mono b{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(90px,14vw,150px);color:var(--accent)}
+.mono::before{content:"";position:absolute;inset:18px;border:1px solid var(--accent);opacity:.35;animation:glow 6s ease-in-out infinite}
+.wa{position:fixed;right:20px;bottom:20px;z-index:20;display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;background:var(--accent);color:#060606 !important;font-weight:500;font-size:14px;letter-spacing:.08em;text-transform:uppercase;border-radius:40px;animation:pulse 2.6s infinite}
+.wa svg{width:22px;height:22px;fill:none;stroke:#060606;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(28px)}
+to{opacity:1;transform:none}
+}
+@keyframes floaty{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-14px)}
+}
+@keyframes glow{
+0%,100%{opacity:.14}
+50%{opacity:.32}
+}
+@keyframes marq{
+to{transform:translateX(-50%)}
+}
+@keyframes grow{
+to{width:120px}
+}
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(201,164,92,.5)}
+70%{box-shadow:0 0 0 16px rgba(201,164,92,0)}
+100%{box-shadow:0 0 0 0 rgba(201,164,92,0)}
+}
+@supports (animation-timeline:view()){
+.reveal{animation:fadeUp both linear;animation-timeline:view();animation-range:entry 0% entry 45%}
+}
+@media (max-width:1020px){
+.nav .l{display:none}
+.g4{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:1fr 1fr}
+.g2{grid-template-columns:1fr;gap:48px}
+.logo{width:70vw;right:-12%;opacity:.2}
+.halo{display:none}
+.sec{padding:88px 0}
+}
+@media (max-width:680px){
+.g4,.g3{grid-template-columns:1fr !important}
+.wn{font-size:16px}
+.sec{padding:68px 0}
+.hero{padding:76px 0 70px}
+.cta{flex-direction:column;align-items:stretch}
+.wa{left:16px;right:16px;justify-content:center}
+.ft{padding-bottom:96px !important}
+}
+@media (prefers-reduced-motion:reduce){
+.wn *{animation:none !important}
+.line{width:120px}
+}
+</style>
+</helmet>
+<div class="wn" style="--accent:{{accent}};--bg:{{bg}};--tx:#EFEAE0;--mu:#A9A397;--sf:#0F0F0F;--ln:rgba(255,255,255,.1)">
+
+<header style="position:sticky;top:0;z-index:10;background:rgba(6,6,6,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)">
+<div class="wrap nav" style="display:flex;align-items:center;justify-content:space-between;gap:24px;height:80px">
+<a href="#inicio" style="line-height:1.1"><span style="font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:.2em;color:var(--accent)">WILLYAM NESSY</span><br><span style="font-size:10px;letter-spacing:.5em;color:var(--mu)">ADVOGADOS</span></a>
+<nav style="display:flex;align-items:center;gap:28px"><a class="l" href="#inicio">Início</a><a class="l" href="#escritorio">O Escritório</a><a class="l" href="#atuacao">Áreas de Atuação</a><a class="l" href="#equipe">Equipe</a><a class="l" href="#conteudos">Conteúdos</a><a class="l" href="#contato">Contato</a><a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado." style="min-height:44px;padding:0 22px">Falar com um advogado</a></nav>
+</div>
+</header>
+
+<section id="inicio" class="hero">
+<div class="halo"></div>
+<img class="logo" src="./assets/981e21c0b927458c95c1ab88d3ba67c6.png" alt="Logotipo Willyam Nessy Advogados">
+<div class="wrap">
+<p class="eyebrow">Porto Alegre · Rio Grande/RS</p>
+<h1 style="font-size:clamp(42px,6.6vw,92px);max-width:760px">Advocacia estratégica para proteger seus direitos e seus interesses</h1>
+<div class="line"></div>
+<p class="mu" style="max-width:560px;font-size:20px;margin:32px 0 44px">Atuação jurídica personalizada, estratégica e próxima em diferentes áreas do Direito.</p>
+<div class="cta" style="display:flex;gap:16px;flex-wrap:wrap">
+<a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Falar com um advogado</a>
+<a class="btn2" href="#atuacao">Conheça nossas áreas de atuação</a>
+</div>
+</div>
+</section>
+
+<div class="mq" aria-hidden="true"><div><span>Direito de Família</span><span>Direito Imobiliário</span><span>Direito Previdenciário</span><span>Direito Civil</span><span>Direito do Trabalho</span><span>Porto Alegre</span><span>Rio Grande</span><span>Direito de Família</span><span>Direito Imobiliário</span><span>Direito Previdenciário</span><span>Direito Civil</span><span>Direito do Trabalho</span><span>Porto Alegre</span><span>Rio Grande</span></div></div>
+
+<section id="escritorio" class="sec" style="border-top:0">
+<div class="wrap">
+<div class="g2" style="align-items:start">
+<div><p class="eyebrow">O Escritório</p><h2 class="h2 reveal">Por que escolher a Willyam Nessy Advogados?</h2></div>
+<p class="mu reveal" style="margin:0">A Willyam Nessy Advogados é um escritório de advocacia com atuação em diferentes áreas do Direito, em Porto Alegre e Rio Grande. O atendimento é presencial e online, com análise individualizada de cada caso antes de definir a estratégia jurídica.</p>
+</div>
+<div class="g4"><div class="reveal pil"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg><h3>Atendimento personalizado</h3><p class="mu">Cada caso recebe uma análise individualizada.</p></div><div class="reveal pil"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M16 8l-2.5 5.5L8 16l2.5-5.5z"></path></svg><h3>Estratégia jurídica</h3><p class="mu">As decisões consideram as particularidades de cada situação.</p></div><div class="reveal pil"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h7v14H4zM13 5h7v14h-7z"></path></svg><h3>Experiência</h3><p class="mu">Atuação em demandas judiciais e extrajudiciais.</p></div><div class="reveal pil"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="12" r="6"></circle><circle cx="15" cy="12" r="6"></circle></svg><h3>Proximidade</h3><p class="mu">Comunicação clara e acompanhamento próximo do cliente.</p></div></div>
+</div>
+</section>
+
+<section id="atuacao" class="sec" style="background:#0A0A0A">
+<div class="wrap">
+<p class="eyebrow">Áreas de Atuação</p>
+<h2 class="h2 reveal" style="max-width:720px">Orientação jurídica clara, em cada fase da sua história.</h2>
+<div class="g3"><article class="card reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z"></path></svg><div class="num">01</div><h3>Direito de Família</h3><p class="mu">Orientação acolhedora e estratégica em situações pessoais e familiares delicadas.</p><details><summary>Saiba mais</summary><div class="dt"><div class="chips"><span class="chip">Divórcio Judicial</span><span class="chip">Divórcio Extrajudicial</span><span class="chip">União Estável</span><span class="chip">Separação</span><span class="chip">Partilha de Bens</span><span class="chip">Anulação de Casamento</span><span class="chip">Alteração de Regime de Bens</span><span class="chip">Suprimento de Autorização</span><span class="chip">Guarda</span><span class="chip">Guarda Avoenga</span><span class="chip">Ação de Alimentos</span><span class="chip">Exoneração de Alimentos</span><span class="chip">Regulamentação de Visitas</span><span class="chip">Investigação de Paternidade</span><span class="chip">Negatória de Paternidade</span><span class="chip">Interdição</span><span class="chip">Reconhecimento de Filiação Socioafetiva</span></div><a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Falar com um advogado</a></div></details></article><article class="card reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11zM10 20v-6h4v6"></path></svg><div class="num">02</div><h3>Direito Imobiliário</h3><p class="mu">Atuação judicial e extrajudicial em demandas imobiliárias, para pessoas físicas, corretoras, empresas, incorporadoras e administradoras.</p><details><summary>Saiba mais</summary><div class="dt"><div class="chips"><span class="chip">Regularização de imóveis</span><span class="chip">Desembargo de obras</span><span class="chip">Contratos imobiliários</span><span class="chip">Demandas judiciais</span><span class="chip">Demandas extrajudiciais</span></div><a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Falar com um advogado</a></div></details></article><article class="card reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg><div class="num">03</div><h3>Direito Previdenciário</h3><p class="mu">Análise de direitos e atuação administrativa e judicial em questões relacionadas ao INSS.</p><details><summary>Saiba mais</summary><div class="dt"><div class="chips"><span class="chip">Benefícios previdenciários</span><span class="chip">Aposentadorias</span><span class="chip">Análise de direitos</span><span class="chip">Questões com o INSS</span></div><a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Falar com um advogado</a></div></details></article><article class="card reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7"></path></svg><div class="num">04</div><h3>Direito Civil</h3><p class="mu">Atuação ampla em demandas cíveis, incluindo contratos e questões imobiliárias, com análise individualizada de cada caso.</p><details><summary>Saiba mais</summary><div class="dt"><a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Falar com um advogado</a></div></details></article><article class="card reveal"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="1"></rect><path d="M9 8V5h6v3M3 13h18"></path></svg><div class="num">05</div><h3>Direito do Trabalho</h3><p class="mu">Orientação e defesa dos interesses de clientes em questões trabalhistas.</p><details><summary>Saiba mais</summary><div class="dt"><a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Falar com um advogado</a></div></details></article></div>
+</div>
+</section>
+
+<div class="mq rev" aria-hidden="true"><div><span>Divórcio Judicial</span><span>Divórcio Extrajudicial</span><span>União Estável</span><span>Separação</span><span>Partilha de Bens</span><span>Anulação de Casamento</span><span>Alteração de Regime de Bens</span><span>Suprimento de Autorização</span><span>Guarda</span><span>Guarda Avoenga</span><span>Ação de Alimentos</span><span>Exoneração de Alimentos</span><span>Regulamentação de Visitas</span><span>Investigação de Paternidade</span><span>Negatória de Paternidade</span><span>Interdição</span><span>Reconhecimento de Filiação Socioafetiva</span><span>Divórcio Judicial</span><span>Divórcio Extrajudicial</span><span>União Estável</span><span>Separação</span><span>Partilha de Bens</span><span>Anulação de Casamento</span><span>Alteração de Regime de Bens</span><span>Suprimento de Autorização</span><span>Guarda</span><span>Guarda Avoenga</span><span>Ação de Alimentos</span><span>Exoneração de Alimentos</span><span>Regulamentação de Visitas</span><span>Investigação de Paternidade</span><span>Negatória de Paternidade</span><span>Interdição</span><span>Reconhecimento de Filiação Socioafetiva</span></div></div>
+
+<section id="equipe" class="sec" style="border-top:0">
+<div class="wrap g2">
+<div class="mono reveal"><b>WN</b></div>
+<div>
+<p class="eyebrow">Equipe</p>
+<h2 class="h2 reveal">Experiência jurídica aliada a um atendimento próximo e personalizado</h2>
+<p class="mu reveal" style="margin:28px 0 16px">Willyam da Cunha Nessy de Oliveira é advogado inscrito na OAB/RS nº 122.706 e bacharel em Direito pela Universidade Federal do Rio Grande — FURG.</p>
+<p class="mu reveal" style="margin:0 0 16px">Possui forte atuação em Direito de Família e Direito Imobiliário, além de atuação em outras áreas do Direito.</p>
+<p class="mu reveal" style="margin:0 0 36px">Seu trabalho é pautado pela análise individualizada de cada caso, buscando compreender as necessidades do cliente e definir a estratégia jurídica adequada para cada situação.</p>
+<a class="btn2" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Agendar atendimento</a>
+</div>
+</div>
+</section>
+
+<section id="unidades" class="sec" style="background:#0A0A0A">
+<div class="wrap">
+<p class="eyebrow">Localizações</p>
+<h2 class="h2 reveal">Duas unidades para atender você.</h2>
+<div class="g3" style="grid-template-columns:repeat(2,1fr);max-width:880px">
+<article class="card reveal"><h3 style="margin-top:0">Porto Alegre</h3><p class="mu">Av. Independência, nº 980<br>Independência — Porto Alegre/RS<br>CEP 90035-072</p><a class="btn2" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Independ%C3%AAncia+980+Porto+Alegre+RS">Como chegar</a></article>
+<article class="card reveal"><h3 style="margin-top:0">Rio Grande</h3><p class="mu">Rua General Câmara, nº 300<br>Centro — Rio Grande/RS</p><a class="btn2" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+General+C%C3%A2mara+300+Rio+Grande+RS">Como chegar</a></article>
+</div>
+</div>
+</section>
+
+<section id="conteudos" class="sec">
+<div class="wrap g2">
+<div><p class="eyebrow">Conteúdos</p><h2 class="h2 reveal">Informação jurídica em linguagem simples.</h2></div>
+<div class="reveal"><p class="mu" style="margin:0 0 32px">Acompanhe o escritório no Instagram e conheça melhor o nosso trabalho.</p><a class="btn2" href="https://www.instagram.com/adv.willyamnessy/">@adv.willyamnessy</a></div>
+</div>
+</section>
+
+<section id="contato" class="sec" style="background:#0A0A0A">
+<div class="wrap g2">
+<div>
+<p class="eyebrow">Contato</p>
+<h2 class="h2 reveal">Precisa de orientação jurídica?</h2>
+<p class="mu reveal" style="margin:28px 0 40px;max-width:480px">Conte brevemente o que aconteceu e entre em contato com nossa equipe para saber como podemos orientar você.</p>
+<div class="cta" style="display:flex;gap:16px;flex-wrap:wrap"><a class="btn" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado.">Falar pelo WhatsApp</a><a class="btn2" href="mailto:contato@wnadvogados.com.br">Enviar e-mail</a></div>
+</div>
+<div class="card reveal" style="padding:44px 38px">
+<p style="margin:0 0 6px" class="mu">WhatsApp</p><p style="margin:0 0 22px"><a href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado." style="color:var(--accent)">(51) 99296-6506</a></p>
+<p style="margin:0 0 6px" class="mu">E-mail</p><p style="margin:0 0 22px"><a href="mailto:contato@wnadvogados.com.br">contato@wnadvogados.com.br</a></p>
+<p style="margin:0 0 6px" class="mu">Instagram</p><p style="margin:0 0 22px"><a href="https://www.instagram.com/adv.willyamnessy/">@adv.willyamnessy</a></p>
+<p style="margin:0 0 6px" class="mu">Endereços</p><p style="margin:0;font-size:15px">Av. Independência, 980 — Porto Alegre/RS<br>Rua General Câmara, 300 — Rio Grande/RS</p>
+</div>
+</div>
+</section>
+
+<footer class="ft" style="border-top:1px solid var(--ln);padding:44px 0;background:#030303">
+<div class="wrap mu" style="font-size:13px;line-height:1.8">
+<div style="font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:.2em;color:var(--accent);margin-bottom:10px">WILLYAM NESSY ADVOGADOS</div>
+Willyam da Cunha Nessy de Oliveira — OAB/RS 122.706. Página institucional, de caráter informativo, em observância ao Código de Ética da OAB.
+</div>
+</footer>
+
+<a class="wa" href="https://wa.me/5551992966506?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20advogado." aria-label="Falar pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"></path></svg>WhatsApp</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C9A45C"},"bg":{"editor":"color","default":"#060606"},"$preview":{"width":1440,"height":4800}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#C9A45C', bg: this.props.bg ?? '#060606' };
+}
+}
+</script>
+</body>
+</html>
